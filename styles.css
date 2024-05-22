@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color: #1e3a4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    display: inline-block;
+    min-width: 360px;
+    min-height: 400px;
+    padding: 50px 15px;
+    background-color: #2c3e50;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-weight: 400;
+    color: #ddd;
+    padding: 30px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.option a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.option a:hover {
+    color: #1abc9c;
+}
+
+#play, #lap, #pause, #reset {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.5);
+    transition: all 0.3s ease;
+}
+
+#play:hover, #lap:hover, #pause:hover, #reset:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.8);
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    color: #ddd;
+}
+
+#laps div {
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    background-color: #34495e;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
